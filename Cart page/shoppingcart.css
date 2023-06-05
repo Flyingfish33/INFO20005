@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 35px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #665A48;
+  z-index: 1;
+}
+
+.logo {
+  cursor: pointer;
+  order: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.IconLeft {
+  cursor: pointer;
+  order: 1;
+}
+
+.IconRight {
+  cursor: pointer;
+  order: 3;
+}
+
+.IconRight .IconRight2 {
+  margin-left: 30px;
+}
+
+.IconRight .IconRight3 {
+  margin-left: 30px;
+}
+
+.ShoppingCart {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 100px;
+  font-family: Bell MT;
+  font-weight: bold;
+  font-size: 40px;
+  color: #665A48;
+  height: 150px;
+}
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  display: flex;
+  font-family: Bell MT;
+  font-size: 25px;
+  color: #665A48;
+  height: 275px;
+}
+
+
+.item_img {
+  display: flex;
+  border: 1px solid #665A48;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 227px;
+  height: 175px;
+}
+
+.itemname {
+  margin-right: 20px;
+}
+
+
+.itemcolor {
+  margin-right: 20px
+}
+
+.quantity {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #665A48;
+  padding: 15px;
+  margin-left: 100px;
+}
+
+.delete {
+  margin-top: -150px;
+}
+
+
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  font-family: Bell MT;
+  font-size: 25px;
+  color: #665A48;
+  height: 275px;
+}
+
+.item_img2 {
+  display: flex;
+  border: 1px solid #665A48;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 227px;
+  height: 175px;
+}
+
+.itemcolor2 {
+  margin-left: -5px;
+}
+
+
+.quantity2 {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #665A48;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.delete2 {
+  margin-top: -150px;
+}
+
+
+.price_part {
+  display: flex;
+  font-family: Bell MT;
+  font-size: 25px;
+  color: #665A48;
+  justify-content: space-between;
+  width: 600px;
+  margin-left: 1050px;
+}
+
+.pay_part {
+  margin-top: 50px;
+  display: flex;
+  font-family: Bell MT;
+  font-size: 25px;
+  color: #665A48;
+  justify-content: space-between;
+  width: 1570px;
+  margin-left: 90px;
+}
+
+.textback {
+  margin-left: 10px;
+  color: #665A48;
+}
+
+.textpay {
+  margin-left: 20px;
+  color: #665A48;
+}
+
+.gap {
+  height: 70px;
+}
+
+
+.link {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: -1;
+}
+
+.link2 {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+  .NavBar {
+    padding: 35px 22px;
+  }
+
+  .logo {
+    left: 35%;
+  }
+
+  .IconLeft img {
+    width: 60%;
+  }
+
+  .orderinfo {
+    width: 90%;
+    margin-left: 5%;
+    height: 150px;
+  }
+
+  .price_part {
+    margin-left: 0;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+  }
+
+  .IconRight1, .IconRight2, .IconRight3 {
+    width: 15%;
+  }
+
+  .item, .item2 {
+    font-size: small;
+    width: 90%;
+    margin: 10px;
+    height: 180px;
+  }
+
+  .item_img, .item_img2 {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+  }
+
+  .quantity {
+    width: 25px;
+    height: 25px;
+    margin-left: 0;
+  }
+
+  .quantity2 {
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
+  }
+
+  .itemprice, .itemprice2 {
+    margin-left: 15px;
+    width: 21%;
+  }
+
+  .delete img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .delete2 img {
+    width: 65%;
+    height: 65%;
+  }
+
+  .ShoppingCart {
+    font-size: 30px;
+    height: 100px;
+  }
+
+  .pay_part {
+    width: auto;
+    margin-left: 10%;
+    font-size: 15px;
+  }
+
+  .back, .pay {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pay_part> :nth-child(2) {
+    margin-right: 10%;
+  }
+
+  .itemname {
+    width: 24%;
+  }
+}
+
+
+.bottomicon {
+  width: 100vw;
+  height: 8vh;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #665A48;
+}
+
+
+.boticon {
+  width: 4vw;
+  height: 4vh;
+  margin-top: 0.9vh;
+  cursor: pointer;
+}
+
+.boticon2 {
+  width: 5vw;
+  height: 5vh;
+  margin-top: 0.5vh;
+  cursor: pointer;
+}

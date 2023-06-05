@@ -1,0 +1,260 @@
+/* Initialize */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Navigation Bar */
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 35px 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #665A48;
+  z-index: 1;
+}
+
+.logo {
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.IconLeft {
+  cursor: pointer;
+  order: 1;
+}
+
+.IconRight {
+  cursor: pointer;
+  order: 3;
+}
+
+.IconRight .IconRight2 {
+  margin-left: 30px;
+}
+
+.IconRight .IconRight3 {
+  margin-left: 30px;
+}
+
+
+
+/* Search Bar */
+.SearchBar {
+  width: 100%;
+  height: 400px;
+  background-image: url("Image/Searchback.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.search-text {
+  font-family: Bell MT;
+  font-size: 64px;
+  color: white;
+  margin-bottom: -150px;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 60px;
+  font-size: large;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 40px;
+}
+
+
+/* 商品顶部 */
+.ProTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.ProTop .top-text {
+  font-family: Bell MT;
+  font-size: 40px;
+  color: #373737;
+  margin-top: 80px;
+}
+
+.Promid {
+  border-top: 1px solid black;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Promid .sortby {
+  margin-top: 10px;
+  margin-left: 45px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.Promid .page1 {
+  margin-right: 45px;
+}
+
+/* Product Section */
+.Product {
+  /*整块商品布局*/
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px;
+  margin-top: 10px;
+}
+
+.imgbox {
+  /*图片框*/
+  width: 370px;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  background-color: #FAFAFA;
+  padding: 50px;
+}
+
+.img {
+  /*图片*/
+  max-width: 75%;
+  max-height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.like {
+  margin-top: 275px;
+  margin-left: 275px;
+  width: 10%;
+  height: 10%;
+}
+
+.ProductSec {
+  /*整个商品*/
+  width: 370px;
+  height: 490px;
+  margin-top: 30px;
+  box-shadow: 0px 5px 5px #cbcbcb;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.ProductSec:hover {
+  background-color: #e2e2e2;
+}
+
+.ProductSec .ProductText {
+  /*商品名*/
+  padding-top: 20px;
+  font-family: Bell MT;
+  font-size: 28px;
+  color: #373737;
+  margin-left: 15px;
+}
+
+.ProductSec .ProductText h4 {
+  font-weight: 500;
+}
+
+.ProductSec .ProductText p {
+  /*商品价格间隔*/
+  padding-top: 5px;
+}
+
+.ProductSec .ProductText p .price {
+  /*商品价格*/
+  display: flex;
+  color: #665A48;
+  font-size: 38px;
+  justify-content: space-between;
+}
+
+.ProductSec .ProductText p .price .Rating {
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.page2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 5vh;
+  cursor: pointer;
+}
+
+.link {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: -1;
+}
+
+.link2 {
+  text-decoration: none;
+
+}
+
+@media (max-width: 600px) {
+
+  .NavBar {
+    padding: 35px 22px;
+  }
+
+  .logo {
+    left: 35%;
+  }
+
+  .IconLeft img {
+    width: 60%;
+  }
+
+  .IconRight1, .IconRight2, .IconRight3 {
+    width: 15%;
+  }
+
+  .Promid {
+    display: contents;
+  }
+
+  .page1 {
+    visibility: hidden;
+  }
+
+  .Product {
+    margin-top: -100px;
+  }
+
+  .page2 img {
+    width: 90%;
+  }
+
+  .SearchBar {
+    height: 300px;
+  }
+
+}

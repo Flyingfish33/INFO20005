@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #665A48;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    order: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.IconLeft {
+    cursor: pointer;
+    order: 1;
+}
+
+.IconRight {
+    cursor: pointer;
+    order: 3;
+}
+
+.IconRight .IconRight2 {
+    margin-left: 30px;
+}
+
+.IconRight .IconRight3 {
+    margin-left: 30px;
+}
+
+.scale1 {
+    transform: scale(0.5);
+}
+
+.ShoppingCart {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+    font-family: Bell MT;
+    font-weight: bold;
+    font-size: 40px;
+    color: #665A48;
+    height: 150px;
+}
+
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 275px;
+}
+
+
+.item_img {
+    display: flex;
+    border: 1px solid #665A48;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 227px;
+    height: 175px;
+}
+
+.itemname {
+    margin-right: 20px;
+}
+
+
+.itemcolor {
+    margin-right: 20px
+}
+
+.quantity {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #665A48;
+    padding: 15px;
+    margin-left: 100px;
+}
+
+.delete {
+    margin-top: -150px;
+}
+
+
+.item2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 275px;
+}
+
+.item_img2 {
+    display: flex;
+    border: 1px solid #665A48;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 227px;
+    height: 175px;
+}
+
+.itemcolor2 {
+    margin-left: -5px;
+}
+
+
+.quantity2 {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #665A48;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.delete2 {
+    margin-top: -150px;
+}
+
+
+.price_part {
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 1050px;
+}
+
+.address {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+    font-family: Bell MT;
+    font-size: 30px;
+    color: #665A48;
+    margin-top: 150px;
+    height: 250px;
+}
+
+.info {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 20px;
+    color: #665A48;
+}
+
+.info2 {
+    margin-left: 100px;
+    width: 400px;
+}
+
+.text {
+    margin-left: 95px
+}
+
+.text2 {
+    margin-left: 95px
+}
+
+.gap {
+    height: 100px;
+}
+
+.orderinfo {
+    border: 1px solid #665A48;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 170px;
+    width: 1370px;
+    height: 150px;
+    box-shadow: 4px -2px 7px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 20px;
+    color: #665A48;
+}
+
+
+.text3 {
+    margin-left: 43%;
+    margin-bottom: 2%;
+}
+
+.text4 {
+    margin-left: 240px
+}
+
+.Thank {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -300px;
+
+}
+
+.Thanks {
+    border: 1px solid #665A48;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 540px;
+    width: 300px;
+    height: 60px;
+    box-shadow: 4px -2px 7px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: Bell MT;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.link {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+
+.link2 {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .NavBar {
+        padding: 35px 22px;
+    }
+
+    .logo {
+        left: 35%;
+    }
+
+    .IconLeft img {
+        width: 60%;
+    }
+
+    .orderinfo {
+        width: 90%;
+        margin-left: 5%;
+        height: 150px;
+    }
+
+    .price_part {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .address {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 60px;
+        font-size: 30px;
+        height: 120px;
+    }
+
+    .ShoppingCart {
+        font-size: 30px;
+        height: 100px;
+    }
+
+    .IconRight1, .IconRight2, .IconRight3 {
+        width: 15%;
+    }
+
+    .item, .item2 {
+        font-size: small;
+        width: 90%;
+        margin: 10px;
+        height: 180px;
+    }
+
+    .item_img, .item_img2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .quantity {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+
+    .quantity2 {
+        width: 25px;
+        height: 25px;
+        margin-left: 2px;
+    }
+
+    .itemprice, .itemprice2 {
+        margin-left: 15px;
+    }
+
+    .delete img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .delete2 img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .info2 {
+        margin-left: 20%;
+    }
+
+    .text, .text2 {
+        margin-left: 75px;
+    }
+
+    .text3 {
+        font-size: 15px;
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+
+    .gap {
+        height: 60px;
+    }
+
+    .orderinfo2 {
+        font-size: 15px;
+        height: 140px;
+    }
+
+    .Thanks {
+        font-size: 15px;
+        margin-top: -45px;
+        height: 45px;
+        margin-left: 575px;
+    }
+}
+
+
+.bottomicon {
+    width: 100vw;
+    height: 8vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #665A48;
+  }
+  
+  
+  .boticon {
+    width: 4vw;
+    height: 4vh;
+    margin-top: 0.9vh;
+    cursor: pointer;
+  }
+  
+  .boticon2 {
+    width: 5vw;
+    height: 5vh;
+    margin-top: 0.5vh;
+    cursor: pointer;
+  }

@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 35px 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #665A48;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    order: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.IconLeft {
+    cursor: pointer;
+    order: 1;
+}
+
+.IconRight {
+    cursor: pointer;
+    order: 3;
+}
+
+.IconRight .IconRight2 {
+    margin-left: 30px;
+}
+
+.IconRight .IconRight3 {
+    margin-left: 30px;
+}
+
+.scale1 {
+    transform: scale(0.5);
+}
+
+.ShoppingCart {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+    font-family: Bell MT;
+    font-weight: bold;
+    font-size: 40px;
+    color: #665A48;
+    height: 150px;
+}
+
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 275px;
+}
+
+
+.item_img {
+    display: flex;
+    border: 1px solid #665A48;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 227px;
+    height: 175px;
+}
+
+.itemname {
+    margin-right: 20px;
+}
+
+
+.itemcolor {
+    margin-right: 20px
+}
+
+.quantity {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #665A48;
+    padding: 15px;
+    margin-left: 100px;
+}
+
+.delete {
+    margin-top: -150px;
+}
+
+
+.item2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 275px;
+}
+
+.item_img2 {
+    display: flex;
+    border: 1px solid #665A48;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 227px;
+    height: 175px;
+}
+
+.itemcolor2 {
+    margin-left: -5px;
+}
+
+
+.quantity2 {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #665A48;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+.delete2 {
+    margin-top: -150px;
+}
+
+
+.price_part {
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: 1050px;
+}
+
+.address {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 100px;
+    font-family: Bell MT;
+    font-weight: bold;
+    font-size: 40px;
+    color: #665A48;
+    margin-top: 150px;
+    height: 250px;
+}
+
+.text1 {
+    width: 100%;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+}
+
+.firstname {
+    display: flex;
+    margin-left: 170px;
+}
+
+.lastname {
+    display: flex;
+    margin-left: 945px;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    font-family: Bell MT;
+    color: black;
+    height: 60px;
+}
+
+.box1 {
+    height: 45px;
+    width: 300px;
+    margin-left: 170px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.box2 {
+    height: 45px;
+    width: 300px;
+    margin-left: 770px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.text3 {
+    width: 100%;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 65px;
+}
+
+.address3 {
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+.box4 {
+    height: 45px;
+    width: 1370px;
+    margin-left: 170px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.text4 {
+    width: 100%;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 65px;
+}
+
+.mobile {
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+.box6 {
+    height: 45px;
+    width: 1370px;
+    margin-left: 170px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.text5 {
+    width: 100%;
+    display: flex;
+    font-family: Bell MT;
+    font-size: 25px;
+    color: #665A48;
+    height: 65px;
+}
+
+.zipcode {
+    margin-top: 50px;
+    margin-left: 170px;
+}
+
+.state {
+    margin-top: 50px;
+    margin-left: 462px
+}
+
+.country {
+    margin-top: 50px;
+    margin-left: 462px;
+}
+
+.box8 {
+    height: 45px;
+    width: 300px;
+    margin-left: 170px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.box9 {
+    height: 45px;
+    width: 300px;
+    margin-left: 255px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.box10 {
+    height: 45px;
+    width: 290px;
+    margin-left: 215px;
+    font-size: 25px;
+    font-family: Bell MT;
+}
+
+.gap {
+    height: 70px;
+}
+
+.payway {
+
+    border: 1px solid #665A48;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 170px;
+    width: 1370px;
+    height: 400px;
+    box-shadow: 4px -2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.img_payway {
+    margin-left: 110px;
+    margin-top: 25px;
+}
+
+.box12 {
+    height: 45px;
+    width: 1100px;
+    margin-left: 120px;
+    font-size: 25px;
+    font-family: Bell MT;
+    margin-top: -20px;
+}
+
+.box13 {
+    height: 45px;
+    width: 300px;
+    margin-left: 120px;
+    font-size: 25px;
+    font-family: Bell MT;
+    margin-top: 40px;
+}
+
+.box14 {
+    height: 45px;
+    width: 295px;
+    margin-left: 500px;
+    font-size: 25px;
+    font-family: Bell MT;
+    margin-top: 40px;
+}
+
+.placeorder {
+
+    border: 1px solid #665A48;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 540px;
+    width: 300px;
+    height: 60px;
+    box-shadow: 4px -2px 7px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: Bell MT;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+}
+
+.text6 {
+    color: #665A48;
+}
+
+.gap2 {
+    height: 70px;
+}
+
+.link {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+
+.link2 {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+
+    .NavBar {
+        padding: 35px 22px;
+    }
+
+    .logo {
+        left: 35%;
+    }
+
+    .IconLeft img {
+        width: 60%;
+    }
+
+    .delete img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .delete2 img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .IconRight1, .IconRight2, .IconRight3 {
+        width: 15%;
+    }
+
+    .item_img, .item_img2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item, .item2 {
+        font-size: small;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .quantity {
+        width: 25px;
+        height: 25px;
+        margin-left: 0;
+    }
+
+    .quantity2 {
+        width: 25px;
+        height: 25px;
+        margin-left: 2px;
+    }
+
+    .itemprice, .itemprice2 {
+        margin-left: 15px;
+    }
+
+    .price_part {
+        margin-left: 0;
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+    }
+
+    .ShoppingCart {
+        font-size: 30px;
+    }
+
+    .address {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 60px;
+        font-size: 30px;
+        height: 120px;
+    }
+
+    .name {
+        padding-left: 45px;
+    }
+
+    .firstname {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .lastname {
+        margin-left: 85px;
+        font-size: 15px;
+    }
+
+    .box1 {
+        margin-left: 0;
+        width: 30%;
+        height: 30px;
+    }
+
+    .box2 {
+        margin-left: 55px;
+        width: 30%;
+        height: 30px;
+    }
+
+    .text3 {
+        height: 50px;
+    }
+
+    .address3 {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .address2 {
+        padding-left: 11%;
+        margin-top: -17%;
+    }
+
+    .box4 {
+        width: 76%;
+        margin-left: 0;
+        height: 30px;
+    }
+
+    .phonenumber {
+        padding-left: 11%;
+    }
+
+    .mobile {
+        margin-left: 0;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .box5 {
+        margin-top: -15%;
+    }
+
+    .box6 {
+        margin-left: 0;
+        width: 76%;
+        height: 30px;
+    }
+
+    .text5 {
+        font-size: 15px;
+    }
+
+    .moreinfo {
+        padding-left: 11%;
+        margin-top: -10%;
+    }
+
+    .zipcode {
+        margin-left: 0;
+    }
+
+    .state {
+        margin-left: 55px;
+    }
+
+    .country {
+        margin-left: 60px;
+    }
+
+    .box8 {
+        width: 15%;
+        margin-left: 0px;
+        height: 30px;
+    }
+
+    .box7 {
+        margin-top: -15px;
+    }
+
+    .box9 {
+        width: 15%;
+        margin-left: 55px;
+        height: 30px;
+    }
+
+    .box10 {
+        width: 15%;
+        margin-left: 40px;
+        height: 30px;
+    }
+
+    .payway {
+        margin-left: 10px;
+        width: 90%;
+        height: auto;
+    }
+
+    .img_payway {
+        margin-left: 10px;
+        width: 110%;
+    }
+
+    .box12 {
+        margin-left: 10px;
+        width: 90%;
+        height: 25px;
+    }
+
+    .box13 {
+        margin-left: 10px;
+        width: 90%;
+        height: 25px;
+        margin-top: 15px;
+    }
+
+    .itemcolor2 {
+        margin-left: 5px;
+    }
+
+    .box14 {
+        margin-left: 10px;
+        width: 90%;
+        height: 25px;
+        margin-top: 15px;
+    }
+
+    .box11 input[type="text"] {
+        font-size: 15px;
+    }
+
+    .placeorder {
+        margin-left: 0px;
+        font-size: 15px;
+        width: 150px;
+        height: 35px;
+        margin-top: 25px;
+        margin-left: 22%;
+    }
+}
+
+
+.bottomicon {
+    width: 100vw;
+    height: 8vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #665A48;
+  }
+  
+  
+  .boticon {
+    width: 4vw;
+    height: 4vh;
+    margin-top: 0.9vh;
+    cursor: pointer;
+  }
+  
+  .boticon2 {
+    width: 5vw;
+    height: 5vh;
+    margin-top: 0.5vh;
+    cursor: pointer;
+  }

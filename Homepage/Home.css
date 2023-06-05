@@ -1,0 +1,547 @@
+/* Initialize */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 底色 */
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Image/Cover.svg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+
+.category {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDE4E0;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advert1 {
+    width: 100%;
+    height: 80vh;
+    background-image: url(Image/Adv.svg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.item {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDE4E0;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advert2 {
+    width: 100%;
+    height: 60vh;
+    background-color: #665A48;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site {
+    width: 100%;
+    height: 60vh;
+    background-color: #9F8772;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.bottom {
+    width: 100%;
+    height: 80vh;
+    background-color: #665A48;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* 第一页 */
+.Nav {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 1.5vw;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5vw;
+    font-family: Segoe UI;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.down {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+
+/* 第二页 */
+.catline {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textin {
+    font-family: Segoe UI;
+    display: flex;
+    justify-content: space-between;
+    font-family: Bell MT;
+    font-size: 1.5vw;
+}
+
+.des {
+    width: 40vw;
+    height: 3vw;
+    border-bottom: 1.5px solid #373737;
+    cursor: pointer;
+    margin-bottom: 1.5vw;
+}
+
+.des1 {
+    width: 40vw;
+    height: 60px;
+    cursor: pointer;
+}
+
+.rightarrow {
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+.category h1 {
+    font-family: Bell MT;
+    font-size: 2vw;
+    margin-top: 4vw;
+    color: #373737;
+}
+
+.buy {
+    width: 4vw;
+}
+
+
+
+/* 第三页 */
+.advtext {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.advtext p {
+    margin-top: 35vh;
+    font-family: Bell MT;
+    font-size: 3vw;
+    font-weight: 500;
+    color: white;
+}
+
+.font1 {
+    font-family: Bell MT;
+    font-size: 6vw;
+    font-weight: 1000;
+}
+
+.explore {
+    display: flex;
+    width: 16vw;
+    height: 8vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: Segoe UI;
+    font-weight: 500;
+    font-size: 1vw;
+    border-radius: 0.2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+}
+
+.exploretext {
+    letter-spacing: 0.1vw;
+    color: #373737;
+    font-size: 1.1vw;
+}
+
+
+
+/* 第四页 */
+.itemin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item h1 {
+    font-family: Bell MT;
+    font-size: 2vw;
+    color: #373737;
+    margin-bottom: 5vw;
+}
+
+.sofa {
+    width: 8vw;
+    height: 8vw;
+    background-color: #9F8772;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2vw;
+    box-shadow: 0 0.2vw 0.5vw gray;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sofa:hover {
+    background-color: #665A48;
+}
+
+.sofaicon {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-bottom: 10px;
+}
+
+.sofa h2 {
+    font-family: Segoe UI;
+    color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.itemgrid {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* 第五页 */
+.card {
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cardicon {
+    height: 60vh;
+}
+
+.advtext2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+    width: 100vw;
+    font-family: Bell MT;
+    font-size: 1.5vw;
+    color: white;
+}
+
+
+/* 第六页 */
+.sitein {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-family: Bell MT;
+    font-size: 2vw;
+    color: white;
+    padding: 15vh;
+}
+
+.siteicon {
+    width: 4vw;
+}
+
+input[type="text"] {
+    width: 20vw;
+    height: 5vh;
+    font-size: 1vw;
+    border: none;
+    border-radius: 0.3vw;
+    outline: none;
+    text-align: center;
+    font-family: Segoe UI;
+}
+
+.bottomtext {
+    margin-top: 10vh;
+}
+
+.des2 {
+    color: white;
+    width: 35vw;
+    height: 3vw;
+    cursor: pointer;
+    margin-bottom: 1.5vw;
+}
+
+.bottomgrid {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: end;
+    align-items: end;
+}
+
+.textin2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: Bell MT;
+    font-size: 1.2vw;
+}
+
+.rightarrow2 {
+    height: 1.2vw;
+    cursor: pointer;
+}
+
+.bottomicon {
+    width: 60vw;
+    height: 10vh;
+    margin-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
+
+
+.boticon {
+    width: 4vw;
+    height: 4vh;
+    margin-top: 0.9vh;
+    cursor: pointer;
+}
+
+.boticon2 {
+    width: 5vw;
+    height: 5vh;
+    margin-top: 0.5vh;
+    cursor: pointer;
+}
+
+.topbox {
+    width: 3vw;
+    height: 3vw;
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    cursor: pointer;
+    box-shadow: 0 0.1vw 1vw rgb(123, 123, 123);
+    transition: all 0.2s ease;
+}
+
+.topbox:hover {
+    background-color: rgb(0, 210, 210);
+}
+
+.topicon {
+    width: 1.7vw;
+    height: 1.7vw;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #373737;
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        width: auto;
+    }
+
+    .whole {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: medium;
+    }
+
+    .menu {
+        width: auto;
+    }
+
+    .buy {
+        width: auto;
+    }
+
+    .category h1 {
+        font-size: 4vw;
+    }
+
+    .textin {
+        font-size: 4.5vw;
+    }
+
+    .rightarrow {
+        height: 4.5vw;
+    }
+
+    .des {
+        width: 45vw;
+        height: auto;
+        margin-bottom: 5vw;
+    }
+
+    .des1 {
+        width: 45vw;
+    }
+
+    .advtext p {
+        font-size: 6vw;
+    }
+
+    .explore {
+        width: 19vw;
+    }
+
+    .exploretext {
+        font-size: 2.1vw;
+    }
+
+    .item h1 {
+        font-size: 6vw;
+    }
+
+    .itemgrid {
+        width: 60vw;
+        height: 70vw;
+    }
+
+    .sofa {
+        width: 16vw;
+        height: 17vw;
+    }
+
+    .sofaicon {
+        width: 5.5vw;
+        height: 4.5vw;
+    }
+
+    .sofa h2 {
+        font-size: 3vw;
+    }
+
+    .siteicon {
+        width: 7vw;
+    }
+
+    .sitein {
+        font-size: 4vw;
+    }
+
+    input[type="text"] {
+        font-size: 3vw;
+    }
+
+    .textin2 {
+        font-size: 4.2vw;
+    }
+
+    .rightarrow2 {
+        height: 4.2vw;
+    }
+
+    .des2 {
+        margin-bottom: 7.5vw;
+    }
+
+    .boticon {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .boticon2 {
+        width: 6vw;
+        height: 6vh;
+    }
+
+    .cardicon{
+        width: 50vw;
+    }
+}
